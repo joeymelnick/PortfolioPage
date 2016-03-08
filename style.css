@@ -27,13 +27,29 @@
   padding: 0px;
 }
 
+/* Button styling */
 .btn{
   border: solid black 2px;
   color: black;
   font-weight: bold;
   margin-top: 10px;
-    
+  }
+
+.btn:focus, .btn:active, .btn.active, .btn:focus:active {
+  background-image: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
+
+.btn:hover {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0,0,0,.9);
+  color: white;
+}
+
+/*Icons for Buttons */
+
 .twitter-black{
   background: url("http://res.cloudinary.com/dh82iies5/image/upload/v1455906154/twitter-16_f4wleu.png") no-repeat; border: none;
   width: 16px;
@@ -99,18 +115,12 @@ a.black-hover:hover{
   color: white;
 }
  
-.btn:hover {
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0,0,0,.9);
-  color: white;
-}
-
 /* Navbar Styling */
 .navbar{
   background: lightgray;
   padding: 5px;
-  border: 0px;
-  margin: 0px;
+  border: 0;
+  margin: 0;
   width: 100%;
   
 }
@@ -121,14 +131,13 @@ a.black-hover:hover{
 .navbar a{
   color: black;
 }
-
+.bigger{
+  font-size: 18px;
+ }
 .nav-item{
   line-height: 5px;
+  height:100%;
 }  
-.dropdown-btn{
-  
-  }
-
 
 /* Hero Styling */
 .hero-unit{
@@ -140,7 +149,7 @@ a.black-hover:hover{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 500px;
+  min-height: 500px;
 }
   
 .title{
@@ -193,11 +202,19 @@ hr {
   color: white;
 }
 
+.about-me p{
+  font-size: 15px;
+}
+
 .selfie{
   border: 2px solid gray;
   margin-top: 20px;
   margin-bottom: 20px;
   height: 300px;
+}
+
+.easy-read{
+  background: rgba(0,0,0,.6);
 }
 
 /*Portfolio Section */
@@ -278,12 +295,11 @@ hr {
    -moz-transition: opacity .5s ease-in-out;
    -webkit-transition: opacity .5s ease-in-out;
    text-align: center;
-  vertical-align: middle;
    }
 .overlay:hover{
   opacity: 1
 }
-
+/*Making portfolio examples responsive */
 @media(min-width: 786px){
   .portfolio-ex{
   border: 1px solid black;
@@ -340,7 +356,7 @@ hr {
   .portfolio-ex{
   border: 1px solid black;
    width: 395px;
-  padding:0px
+  padding:0;
    
   }
     .inner-portfolio{
@@ -368,15 +384,17 @@ hr {
    background-position: top left;
   background-repeat: no-repeat;
   background-attachment: fixed;
- background-image:url('https://images.unsplash.com/38/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg?crop=entropy&fit=crop&fm=jpg&h=650&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1375');
-    -webkit-background-size: cover;
+ background-image:url('https://images.unsplash.com/photo-1452800185063-6db5e12b8e2e?crop=entropy&fit=crop&fm=jpg&h=650&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1375');
+    -webkit-background-size:('https://images.unsplash.com/photo-1447877085163-3cce903855cd?crop=entropy&fit=crop&fm=jpg&h=650&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1375') cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 500px;
   color: white;
 }
-
+.contact-link:hover{
+  text-decoration: none;
+}
 .contact-row{
   padding-top: 60px;
 }
@@ -392,13 +410,14 @@ hr {
 
 
 .contact-details > h2{
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .verticle-btn{
   text-align: left;
 }
 
+/* footer styling */
 footer{
   height: 100px;
   background: lightgray;
@@ -418,6 +437,3 @@ footer{
   padding-left: 50px;
 }
 
-.footer-link > a{
-  
-}
