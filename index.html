@@ -76,13 +76,13 @@
         </ul>
       </div>
     </nav>
-     
+     <div class='background'>
      <!-- This is where the main/hero page lives -->
-    <div class='row hero-unit'>
+      <div class='row hero-unit'
       <a name ='home'></a>
       <div class='row title'>
         <h1>Joey Melnick</h1>
-        <p>Web Development and More!</p>
+        <p>HTML, CSS, JavaScript and More</p>
       </div>
 
       <hr>
@@ -120,11 +120,11 @@
         </div>
   
         <div class='visible-xs text-center'>
-          <a href="" class='black-hover' onmouseover="invertFcc()" onmouseout="invertFcc2()">
+          <a href="mailto:jmelnick86@gmail.com" target="_top" class='black-hover' onmouseover="invertEmail()" onmouseout="invertEmail2()">
             <button class='btn'>
-              <div class='pull-left fcc-black'></div>
-              <div class='pull-left fcc-white'></div>
-              <span class ='img-btn'>freeCodeCamp</span>
+              <div class='pull-left email-black'></div>
+              <div class='pull-left email-white'></div>
+              <span class ='img-btn'>eMail</span>
             </button>
           </a>
         </div>
@@ -156,20 +156,20 @@
             </button>
           </a>
          
-          <a href="" class='black-hover' onmouseover="invertFcc()" onmouseout="invertFcc2()">
+          <a href="mailto:jmelnick86@gmail.com" target="_top" class='black-hover' onmouseover="invertEmail()" onmouseout="invertEmail2()">
             <button class='btn'>
-              <div class='pull-left fcc-black'></div>
-              <div class='pull-left fcc-white'></div>
-              <span class ='img-btn'>freeCodeCamp</span>
+              <div class='pull-left email-black'></div>
+              <div class='pull-left email-white'></div>
+              <span class ='img-btn'>eMail</span>
             </button>
           </a>
         </div>
       </div><!--ends buttons -->
-    </div><!-- ends hero area -->
+  </div><!-- ends hero area -->
   
      
     <!-- the next section starts here -->
-    <div class ='about-me'>
+      <div class='about-me'>
       <a name ='about'></a>
       <div class = 'row'>
         <div  class = 'col-sm-6'>
@@ -191,27 +191,28 @@
           <img src = 'http://res.cloudinary.com/dh82iies5/image/upload/v1456241045/profilepiccropp_c4kifu.png' class = 'img-circle selfie'>
         </div>
       </div>
-    </div>
+      </div>
 
     <!-- Start of Portfolio section-->
-    <div class='portfolio'>
+      <div class='portfolio'>
       <a name ='portfolio'></a>
       
       <div class='row text-center'>
         <h1> Portfolio Projects </h1>
-        <h3> These are some portfolios </h3>
+        <h3> These are some of my projects</h3>
       </div>
      
       <!-- Setup for portfolio pictures to be entered -->
       <div class='row-centered portfolio-row'>
+        <a href='http://codepen.io/jmelnick86/full/bpeVpv/' target='_blank' class='portfolio-link'>
         <div class='portfolio-ex col-centered'>
-          <div class='inner-portfolio center-block'>
+          <div class='inner-portfolio quote-generator center-block'>
             <div class='overlay'><img src='http://res.cloudinary.com/dh82iies5/image/upload/v1456770348/whitefcc_big_bpeuvr.png' height='70px' width='60px'></div>
           </div>
           <div class='portfolio-title center-block'>
-            <span class='portfolio-text'> Coming Soon</span>
-            <span class='second-portfolio-text'>TBD</span>
-          </div>
+            <span class='portfolio-text'>Random Quote Generator</span>
+            <span class='second-portfolio-text'>JavaScript, API, JSON, Jquery</span>
+          </div></a>
         </div>
         
         <div class='portfolio-ex col-centered'>
@@ -265,7 +266,7 @@
             <span class='second-portfolio-text'>TBD</span>
           </div>
         </div>
-      </div>
+        </div>
      <!-- start of the contact me section -->
         <div class='contact-me'>
           <a name='contact'></a>
@@ -301,34 +302,34 @@
                 <span class ='img-btn'>LinkedIn</span>
                 </button>
               </a>
-              <a href="https://github.com/joeymelnick" class='black-hover' onmouseover="invertFcc()" onmouseout="invertFcc2()">
-                <button class='btn'>
-                <div class='pull-left fcc-black'></div>
-                <div class='pull-left fcc-white'></div>
-                <span class ='img-btn'>freeCodeCamp</span>
-                </button>
-              </a>
+              <a href="mailto:jmelnick86@gmail.com" target="_top" class='black-hover' onmouseover="invertEmail()" onmouseout="invertEmail2()">
+            <button class='btn'>
+              <div class='pull-left email-black'></div>
+              <div class='pull-left email-white'></div>
+              <span class ='img-btn'>eMail</span>
+            </button>
+          </a>
             </div>
                 
           </div>
         </div>
       </div>
     </div>
-        
+</div> 
         <!-- Start of the footer --> 
     <footer>
       <ul class='footer-nav'>
         <li class="footer-item">
-          <a class="footer-link" href="#">Home</a>
+          <a class="footer-link" href="#home">Home</a>
         </li>
         <li class="footer-item">
-          <a class="footer-link" href="#">About</a>
+          <a class="footer-link" href="#about">About</a>
         </li>
         <li class="footer-item">
-          <a class="footer-link" href="#">Portfolio</a>
+          <a class="footer-link" href="#portfolio">Portfolio</a>
         </li>
         <li class="footer-item">
-          <a class="footer-link" href="#">Contact</a>
+          <a class="footer-link" href="#contact">Contact</a>
         </li>
       </ul>
       <p class='footer-text'>Created by Joey Melnick. All rights reserved.</p>
