@@ -25,11 +25,11 @@ function invertLinked2(){
   $('.linked-white').css('display', 'none')
 }
 
-function invertFcc(){
-  $('.fcc-black').css('display', 'none');
-  $('.fcc-white').css('display', 'block')
+function invertEmail(){
+  $('.email-black').css('display', 'none');
+  $('.email-white').css('display', 'block')
 }
-function invertFcc2(){
-   $('.fcc-black').css('display', 'block');
-  $('.fcc-white').css('display', 'none')
+function invertEmail2(){
+   $('.email-black').css('display', 'block');
+  $('.email-white').css('display', 'none')
 }
